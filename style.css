@@ -5,11 +5,13 @@
     box-sizing: border-box;
 }
 
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f5f8ef;
     color: #333;
 }
+
 
 /* Header */
 header {
@@ -21,12 +23,14 @@ header {
     font-weight: bold;
 }
 
+
 /* Navigation Bar */
 nav {
     background-color: #228b22;
     padding: 15px;
     text-align: center;
 }
+
 
 nav a {
     color: #ffeb3b;
@@ -36,9 +40,11 @@ nav a {
     font-weight: bold;
 }
 
+
 nav a:hover {
     color: white;
 }
+
 
 /* University Image */
 img {
@@ -48,6 +54,7 @@ img {
     display: block;
     margin: 15px auto;
 }
+
 
 /* Main Content */
 main {
@@ -59,12 +66,14 @@ main {
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
 }
 
+
 /* Heading */
 h1 {
     color: #14532d;
     text-align: center;
     margin-bottom: 25px;
 }
+
 
 /* Login Form */
 aside {
@@ -76,11 +85,13 @@ aside {
     border: 2px solid #d4e6a5;
 }
 
+
 /* Table */
 table {
     width: 100%;
     border-collapse: collapse;
 }
+
 
 th {
     background-color: #14532d;
@@ -89,9 +100,11 @@ th {
     font-size: 18px;
 }
 
+
 td {
     padding: 12px 5px;
 }
+
 
 /* Input Fields */
 input {
@@ -102,9 +115,11 @@ input {
     outline: none;
 }
 
+
 input:focus {
     border-color: #228b22;
 }
+
 
 /* Buttons */
 button {
@@ -119,10 +134,12 @@ button {
     font-weight: bold;
 }
 
+
 button:hover {
     background-color: #14532d;
     color: #ffeb3b;
 }
+
 
 /* Footer */
 footer {
@@ -132,7 +149,36 @@ footer {
     padding: 20px;
     margin-top: 30px;
 }
+/* Arranges Item 1 and Item 2 side-by-side */
 .container {
   display: flex;
+  justify-content: center;
+  align-items: stretch; /* Makes both panels the same height */
+  gap: 25px; /* Space between the two panels */
+  margin-top: 20px;
 }
 
+
+/* Gives both panels the same card/box look */
+.panel {
+  background-color: rgba(255, 255, 255, 0.85);
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 25px;
+  width: 350px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Centers the logo inside the right panel */
+.logo-panel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.logo-panel img {
+  max-width: 180px;
+  height: auto;
+}
